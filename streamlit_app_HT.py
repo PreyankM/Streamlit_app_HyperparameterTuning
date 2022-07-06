@@ -13,7 +13,7 @@ st.set_page_config(page_title='Hyperparameter Tuning',
     layout='wide')
 
 st.write("""
-# Hyperparameter Tuning App
+# Hyperparameter Tuning/Optimization App
 **(Using Regression)**
 In this implementation, the *RandomForestRegressor()* function is used in this app for build a regression model using the **Random Forest** algorithm.
 """)
