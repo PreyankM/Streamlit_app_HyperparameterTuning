@@ -12,17 +12,14 @@ from sklearn.datasets import load_diabetes
 st.set_page_config(page_title='Hyperparameter Tuning',
     layout='wide')
 
-'''st.write("""
-# The Machine Learning Hyperparameter Optimization App
-**(Regression Edition)**
+st.write("""
+# Hyperparameter Tuning App
+**(Using Regression)**
 In this implementation, the *RandomForestRegressor()* function is used in this app for build a regression model using the **Random Forest** algorithm.
-""")'''
+""")
 
 st.sidebar.header('Upload your CSV data')
 uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
-'''st.sidebar.markdown("""
-[Example CSV input file](https://raw.githubusercontent.com/dataprofessor/data/master/delaney_solubility_with_descriptors.csv)
-""")'''
 
 st.sidebar.header('Set Parameters')
 split_size = st.sidebar.slider('Data split ratio (% for Training Set)', 10, 90, 80, 5)
